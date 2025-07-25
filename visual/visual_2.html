@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav></nav>
+
+    <aside></aside>
+
+    <main>
+        <h1></h1>
+    </main>
+
+    <section></section>
+
+    <article></article>
+
+    <form data-form>
+        <input placeholder="Name" type="text">
+        <button>Save</button>
+    </form>
+
+    <div data-container aria-live="polite"></div>
+
+    <script>
+        const form = document.querySelector("[data-form]")
+        form.addEventListener("submit", e => {
+            e.preventDefault()
+            const container = document.querySelector("[data-container]")
+            const div = document.createElement("div")
+            div.innerText = "Data was saved"
+            container.append(div)
+        })
+    </script>
+</body>
+</html>

@@ -58,7 +58,7 @@ https://webaim.org
 
 - eslint-plugin-jsx-a11y
 
-### Install plugin
+#### Install plugin
 
 ```
 npm i eslint-plugin-jsx-a11y
